@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sitemap — W. le Comte Aannemingsbedrijf b.v.
+  https://www.wlecomte.nl/
+  Gegenereerd: 2026-05-27
+  Inclusief Google Image Sitemap extensie (xmlns:image)
+-->
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- ═══════════════════════════════════════════
+       HOMEPAGE  |  Prioriteit: 1.0
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.wlecomte.nl/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.wlecomte.nl/images/Hero%20sectie.jpg</image:loc>
+      <image:title>W. le Comte Aannemingsbedrijf — Civiel technisch vakmanschap regio Rotterdam</image:title>
+      <image:caption>Meer dan 60 jaar betrouwbaar vakmanschap in bestrating, rioolwerken en grondverzet</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wlecomte.nl/images/Wij%20zijn%20anders%20in%20elk%20project.jpg</image:loc>
+      <image:title>W. le Comte — Vakmanschap in uitvoering, regio Rotterdam</image:title>
+      <image:caption>Civiel technisch aannemersbedrijf actief in Rotterdam, Barendrecht, Ridderkerk en omgeving</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ═══════════════════════════════════════════
+       DIENSTEN  |  Prioriteit: 0.95
+       Hoogste commerciële waarde — alle zoekwoorden
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.wlecomte.nl/diensten/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.wlecomte.nl/images/Bestrating.jpg</image:loc>
+      <image:title>Bestrating aanleggen Rotterdam — W. le Comte aannemersbedrijf</image:title>
+      <image:caption>Vakkundige aanleg en herstel van bestrating voor wegen, opritten en openbare ruimten in de regio Rotterdam</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wlecomte.nl/images/Rioolwerk.jpg</image:loc>
+      <image:title>Rioolwerken Rotterdam — aanleg en reparatie riolering</image:title>
+      <image:caption>Complete rioolwerkzaamheden: aanleg, vervanging en onderhoud voor gemeenten en particulieren</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wlecomte.nl/images/Grondwerken.jpg</image:loc>
+      <image:title>Grondwerk en grondverzet regio Rotterdam — W. le Comte</image:title>
+      <image:caption>Professioneel grondverzet voor bouw- en infraprojecten met eigen machinepark</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wlecomte.nl/images/Straatwerken.jpg</image:loc>
+      <image:title>Straatwerk gemeente Rotterdam — aanleg en renovatie straatverharding</image:title>
+      <image:caption>Aanleg en renovatie van straatverhardingen voor gemeenten, haven en industrieterreinen</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wlecomte.nl/images/Tuinaanleg.webp</image:loc>
+      <image:title>Tuinophoging en tuinaanleg Rotterdam — civiel aannemersbedrijf</image:title>
+      <image:caption>Tuinophoging, terras aanleg en groenvoorzieningen voor particulieren en bedrijven</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.wlecomte.nl/images/Civiel%20Technisch%20Werk.webp</image:loc>
+      <image:title>Civiel technisch werk Rotterdam — kademuurherstel en infrastructuur</image:title>
+      <image:caption>Civiel technische werkzaamheden: fundering, drainage, kademuurherstel en infrastructurele aanpassingen</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT  |  Prioriteit: 0.90
+       Conversiepagina — lokale SEO signaal
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.wlecomte.nl/contact/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════
+       OVER ONS  |  Prioriteit: 0.80
+       E-E-A-T signalen, betrouwbaarheid
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.wlecomte.nl/over-ons/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+    <image:image>
+      <image:loc>https://www.wlecomte.nl/images/Wij%20zijn%20anders%20in%20elk%20project.jpg</image:loc>
+      <image:title>W. le Comte team — opgericht 1964, VCA-gecertificeerd aannemersbedrijf Heerjansdam</image:title>
+      <image:caption>Meer dan 60 jaar civiel technisch vakmanschap in de regio Rotterdam en Hoeksche Waard</image:caption>
+    </image:image>
+  </url>
+
+  <!-- ═══════════════════════════════════════════
+       PROJECTEN  |  Prioriteit: 0.80
+       Portfolio, social proof, keyword-rijke content
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.wlecomte.nl/projecten/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════
+       VACATURES  |  Prioriteit: 0.65
+       Recruitment — JobPosting schema
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.wlecomte.nl/vacatures/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+
+  <!--
+    UITGESLOTEN PAGINA'S (noindex — niet in sitemap)
+    - /privacybeleid/         → noindex, follow
+    - /algemene-voorwaarden/  → noindex, follow
+    Reden: conflicterende signalen vermijden; Google respecteert noindex-tag.
+  -->
+
+</urlset>

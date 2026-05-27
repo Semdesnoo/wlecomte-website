@@ -1,0 +1,558 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projecten — W. le Comte Aannemingsbedrijf</title>
+  <meta name="description" content="Bekijk uitgevoerde projecten van W. le Comte: bestrating, rioolwerken, grondverzet en civiel technisch werk in de regio Rotterdam." />
+  <link rel="canonical" href="https://www.wlecomte.nl/projecten/" />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.wlecomte.nl/projecten/" />
+  <meta property="og:title" content="Projecten — W. le Comte Aannemingsbedrijf" />
+  <meta property="og:description" content="Uitgevoerde projecten van W. le Comte: bestrating, rioolwerken, grondverzet en civiel technisch werk in Rotterdam, Maasvlakte, Ridderkerk en omgeving." />
+  <meta property="og:image" content="https://www.wlecomte.nl/images/Bestrating.jpg" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:site_name" content="W. le Comte Aannemingsbedrijf" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projecten — W. le Comte Aannemingsbedrijf" />
+  <meta name="twitter:description" content="Uitgevoerde projecten van W. le Comte in de regio Rotterdam: bestrating, rioolwerken, grondverzet en civiel technisch werk." />
+  <meta name="twitter:image" content="https://www.wlecomte.nl/images/Bestrating.jpg" />
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://www.wlecomte.nl/projecten/#webpage",
+        "url": "https://www.wlecomte.nl/projecten/",
+        "name": "Projecten — W. le Comte Aannemingsbedrijf",
+        "description": "Uitgevoerde projecten van W. le Comte: bestrating, rioolwerken, grondverzet en civiel technisch werk in de regio Rotterdam.",
+        "isPartOf": {"@id": "https://www.wlecomte.nl/#website"},
+        "about": {"@id": "https://www.wlecomte.nl/#business"},
+        "inLanguage": "nl-NL",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.wlecomte.nl/"},
+            {"@type": "ListItem", "position": 2, "name": "Projecten", "item": "https://www.wlecomte.nl/projecten/"}
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+  <!-- Google Fonts — asynchroon geladen (niet render-blokkerend) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" /></noscript>
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    /* ── FILTER BAR ─────────────────────────── */
+    #filter-bar { padding: 36px 0 0; background: var(--beige); }
+    .filter-inner { display: flex; gap: 10px; flex-wrap: wrap; }
+    .filter-btn {
+      font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 9px 18px; border-radius: 999px;
+      border: 1.5px solid var(--beige-3);
+      background: var(--white); color: var(--text-muted);
+      cursor: pointer; transition: all var(--tr);
+    }
+    .filter-btn:hover { border-color: var(--green); color: var(--green); }
+    .filter-btn.active {
+      background: var(--green); border-color: var(--green);
+      color: var(--white);
+    }
+
+    /* ── PROJECTS GRID ─────────────────────── */
+    #projecten { padding: 56px 0 100px; background: var(--beige); }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .proj-card {
+      border-radius: var(--radius-card); overflow: hidden;
+      border: 1px solid var(--beige-3); background: var(--white);
+      transition: transform var(--tr), box-shadow var(--tr);
+      cursor: pointer;
+    }
+    .proj-card:hover { transform: translateY(-5px); box-shadow: 0 20px 48px rgba(0,0,0,0.09); }
+    .proj-img {
+      position: relative; overflow: hidden;
+    }
+    .proj-img-bg {
+      width: 100%; transition: transform 0.5s ease;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .proj-card:hover .proj-img-bg { transform: scale(1.04); }
+    .proj-img-bg svg { opacity: 0.12; }
+    .pi-1 { background: linear-gradient(145deg, #2E3A20, #5A7040); height: 260px; }
+    .pi-2 { background: linear-gradient(145deg, #1A2E3A, #3A5A70); height: 200px; }
+    .pi-3 { background: linear-gradient(145deg, #3A2A1A, #705030); height: 240px; }
+    .pi-4 { background: linear-gradient(145deg, #2A1A3A, #503070); height: 220px; }
+    .pi-5 { background: linear-gradient(145deg, #1A3A2A, #307050); height: 280px; }
+    .pi-6 { background: linear-gradient(145deg, #3A3A1A, #707030); height: 200px; }
+    .pi-7 { background: linear-gradient(145deg, #2E3A20, #4A6835); height: 240px; }
+    .pi-8 { background: linear-gradient(145deg, #3A1A1A, #703030); height: 220px; }
+    .pi-9 { background: linear-gradient(145deg, #1A2A3A, #305070); height: 260px; }
+    .proj-cat-badge {
+      position: absolute; top: 14px; left: 14px;
+      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--white);
+      background: rgba(0,0,0,0.35);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 4px 10px; border-radius: 999px;
+    }
+    .proj-arrow {
+      position: absolute; bottom: 14px; right: 14px;
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transition: opacity var(--tr), transform var(--tr);
+      transform: translateY(4px);
+    }
+    .proj-card:hover .proj-arrow { opacity: 1; transform: translateY(0); }
+    .proj-body { padding: 22px 22px 26px; }
+    .proj-location {
+      display: flex; align-items: center; gap: 5px;
+      font-size: 0.7rem; color: var(--text-muted); margin-bottom: 6px;
+    }
+    .proj-name { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .proj-desc { font-size: 0.83rem; color: var(--text-muted); line-height: 1.65; margin-bottom: 14px; }
+    .proj-meta { display: flex; gap: 6px; flex-wrap: wrap; }
+    .proj-tag {
+      font-size: 0.6rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--green);
+      background: rgba(59,74,44,0.08); padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    /* ── FEATURED PROJECT ──────────────────── */
+    #featured { padding: 100px 0; background: var(--beige-2); }
+    .feat-inner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: center;
+    }
+    .feat-img {
+      border-radius: var(--radius-card); overflow: hidden;
+      background: linear-gradient(145deg, #2E3A20, #5A7040);
+      aspect-ratio: 4/3;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .feat-img svg { opacity: 0.12; }
+    .feat-text h2 {
+      font-size: clamp(1.6rem,3vw,2.4rem); font-weight: 800;
+      letter-spacing: -0.02em; margin-bottom: 14px;
+    }
+    .feat-text h2 span { color: var(--green); }
+    .feat-text p { font-size: 0.92rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 20px; }
+    .feat-stats { display: flex; gap: 32px; margin-bottom: 28px; }
+    .feat-stat-num { font-size: 1.8rem; font-weight: 800; color: var(--text); line-height: 1; margin-bottom: 3px; }
+    .feat-stat-lbl { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-muted); }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .projects-grid { grid-template-columns: repeat(2, 1fr); }
+      .feat-inner { grid-template-columns: 1fr; gap: 48px; }
+    }
+    @media (max-width: 768px) {
+      .projects-grid { grid-template-columns: 1fr; }
+      .feat-stats { gap: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="mob-menu" id="mobMenu" role="dialog" aria-modal="true" aria-label="Navigatiemenu">
+  <a href="/" onclick="closeMob()">Home</a>
+  <a href="/over-ons/" onclick="closeMob()">Over Ons</a>
+  <a href="/diensten/" onclick="closeMob()">Diensten</a>
+  <a href="/projecten/" onclick="closeMob()">Projecten</a>
+  <a href="/contact/" onclick="closeMob()">Contact</a>
+  <a href="/contact/" class="btn-green btn" onclick="closeMob()">Offerte Aanvragen</a>
+</nav>
+
+<header id="nav" role="banner">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">W. le Comte B.V.</a>
+    <ul class="nav-links" role="list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/over-ons/">Over Ons</a></li>
+      <li><a href="/diensten/">Diensten</a></li>
+      <li><a href="/projecten/" class="active">Projecten</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <button type="button" class="burger" id="burger" aria-label="Menu openen" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- PAGE BANNER -->
+<section class="page-banner" aria-label="Projecten">
+  <div class="container">
+    <nav class="banner-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">›</span>
+      <span>Projecten</span>
+    </nav>
+    <h1 class="banner-title">Onze <em>Projecten</em></h1>
+    <p class="banner-sub">Een selectie van uitgevoerde projecten in de regio Rotterdam. Van gemeentelijke infrastructuur tot particuliere tuinaanleg — wij zijn trots op elk werk.</p>
+  </div>
+</section>
+
+<!-- FILTER BAR -->
+<section id="filter-bar" aria-label="Projectfilter">
+  <div class="container">
+    <div class="filter-inner" role="group" aria-label="Projectcategorie filter">
+      <button type="button" class="filter-btn active">Alles</button>
+      <button type="button" class="filter-btn">Bestrating</button>
+      <button type="button" class="filter-btn">Rioolwerken</button>
+      <button type="button" class="filter-btn">Grondwerk</button>
+      <button type="button" class="filter-btn">Straatwerk</button>
+      <button type="button" class="filter-btn">Civiel Technisch</button>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS GRID -->
+<section id="projecten" aria-label="Projecten overzicht">
+  <div class="container">
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="proj-card fu d1">
+        <div class="proj-img">
+          <div class="proj-img-bg pi-1">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.7" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          </div>
+          <span class="proj-cat-badge">Bestrating</span>
+          <div class="proj-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-location">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Rotterdam, Havengebied
+          </div>
+          <h3 class="proj-name">Havenpier Bestrating — Maasvlakte</h3>
+          <p class="proj-desc">Volledige herbestrating van een bedrijventerrein op de Maasvlakte. Aanleg van nieuwe rijvloer in gebakken klinkers met afwateringssysteem.</p>
+          <div class="proj-meta">
+            <span class="proj-tag">Bestrating</span>
+            <span class="proj-tag">Havenbedrijf</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="proj-card fu d2">
+        <div class="proj-img">
+          <div class="proj-img-bg pi-2">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.7" aria-hidden="true"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
+          </div>
+          <span class="proj-cat-badge">Rioolwerken</span>
+          <div class="proj-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-location">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Heerjansdam &amp; omgeving
+          </div>
+          <h3 class="proj-name">Rioolvernieuwing Woonwijk</h3>
+          <p class="proj-desc">Vervanging van verouderd rioolstelsel in een woonwijk. Complete aanleg van nieuwe rioleringsbuizen inclusief aansluitingen op bestaand stelsel.</p>
+          <div class="proj-meta">
+            <span class="proj-tag">Rioolwerken</span>
+            <span class="proj-tag">Gemeente</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="proj-card fu d3">
+        <div class="proj-img">
+          <div class="proj-img-bg pi-3">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.7" aria-hidden="true"><path d="M3 18h18M3 14l5-4 4 4 4-4 5 4"/></svg>
+          </div>
+          <span class="proj-cat-badge">Grondwerk</span>
+          <div class="proj-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-location">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Rotterdam Zuid
+          </div>
+          <h3 class="proj-name">Grondverzet Nieuwbouwlocatie</h3>
+          <p class="proj-desc">Groot grondverzet project voor voorbereiding van nieuwe woningbouw. Afgraving, transport en egalisatie van circa 15.000 m³ grond.</p>
+          <div class="proj-meta">
+            <span class="proj-tag">Grondwerk</span>
+            <span class="proj-tag">Infra</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="proj-card fu d1">
+        <div class="proj-img">
+          <div class="proj-img-bg pi-4">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.7" aria-hidden="true"><path d="M2 20h20M4 20V10l8-7 8 7v10"/></svg>
+          </div>
+          <span class="proj-cat-badge">Straatwerk</span>
+          <div class="proj-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-location">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Rotterdam Centrum
+          </div>
+          <h3 class="proj-name">Schoolplein Renovatie Basisschool</h3>
+          <p class="proj-desc">Volledige renovatie van het schoolplein inclusief nieuwe bestrating, speelplein elementen en verbeterde afwatering.</p>
+          <div class="proj-meta">
+            <span class="proj-tag">Straatwerk</span>
+            <span class="proj-tag">Onderwijs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="proj-card fu d2">
+        <div class="proj-img">
+          <div class="proj-img-bg pi-5">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.7" aria-hidden="true"><path d="M12 22V12M12 12C12 7 7 3 2 3c0 5 4 9 10 9M12 12c0-5 5-9 10-9-1 5-5 9-10 9"/></svg>
+          </div>
+          <span class="proj-cat-badge">Tuinonderhoud</span>
+          <div class="proj-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-location">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Barendrecht
+          </div>
+          <h3 class="proj-name">Tuinophoging Particulier — Barendrecht</h3>
+          <p class="proj-desc">Ophoging en aanleg van een achtertuin voor een particuliere opdrachtgever. Inclusief terras, bestrating en nieuwe afwateringssloot.</p>
+          <div class="proj-meta">
+            <span class="proj-tag">Tuinwerk</span>
+            <span class="proj-tag">Particulier</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="proj-card fu d3">
+        <div class="proj-img">
+          <div class="proj-img-bg pi-6">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.7" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+          </div>
+          <span class="proj-cat-badge">Civiel Technisch</span>
+          <div class="proj-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-location">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Botlek, Rotterdam
+          </div>
+          <h3 class="proj-name">Kademuurherstel Botlek</h3>
+          <p class="proj-desc">Herstelwerkzaamheden aan een beschadigde kademuur in het havengebied Botlek. Inclusief herbestrating van de kade en aanpassing drainage.</p>
+          <div class="proj-meta">
+            <span class="proj-tag">Civiel Technisch</span>
+            <span class="proj-tag">Haven</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="proj-card fu d1">
+        <div class="proj-img">
+          <div class="proj-img-bg pi-7">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.7" aria-hidden="true"><path d="M3 3h5v5H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z"/></svg>
+          </div>
+          <span class="proj-cat-badge">Bestrating</span>
+          <div class="proj-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-location">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Ridderkerk
+          </div>
+          <h3 class="proj-name">Parkeerterrein Bedrijvenpark Ridderkerk</h3>
+          <p class="proj-desc">Aanleg van nieuw parkeerterrein voor bedrijvenpark. Circa 120 parkeerplaatsen in gebakken klinkers met afscheiding en wegmarkering.</p>
+          <div class="proj-meta">
+            <span class="proj-tag">Bestrating</span>
+            <span class="proj-tag">Bedrijven</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="proj-card fu d2">
+        <div class="proj-img">
+          <div class="proj-img-bg pi-8">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.7" aria-hidden="true"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v3"/><rect x="9" y="11" width="14" height="10" rx="1"/></svg>
+          </div>
+          <span class="proj-cat-badge">Grondwerk</span>
+          <div class="proj-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-location">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Spijkenisse
+          </div>
+          <h3 class="proj-name">Grondwerk Recreatieplas Spijkenisse</h3>
+          <p class="proj-desc">Uitgraving en profilerwerkzaamheden rondom recreatieplas. Aanpassing van oevers en aanleg van wandelpad inclusief fundatie.</p>
+          <div class="proj-meta">
+            <span class="proj-tag">Grondwerk</span>
+            <span class="proj-tag">Gemeente</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 9 -->
+      <div class="proj-card fu d3">
+        <div class="proj-img">
+          <div class="proj-img-bg pi-9">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="0.7" aria-hidden="true"><path d="M4 12h16M4 6h16M4 18h16"/><circle cx="12" cy="12" r="2"/></svg>
+          </div>
+          <span class="proj-cat-badge">Rioolwerken</span>
+          <div class="proj-arrow" aria-hidden="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1C1C1A" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-location">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Dordrecht
+          </div>
+          <h3 class="proj-name">Rioolaanleg Industrieterrein Dordrecht</h3>
+          <p class="proj-desc">Complete aanleg van nieuw rioolstelsel voor een uitbreidend industrieterrein. Inclusief kolken, straatputten en aansluiting op hoofdriool.</p>
+          <div class="proj-meta">
+            <span class="proj-tag">Rioolwerken</span>
+            <span class="proj-tag">Industrie</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECT -->
+<section id="featured" aria-label="Uitgelicht project">
+  <div class="container">
+    <div class="feat-inner">
+      <div class="feat-img fu" role="img" aria-label="Havenpier bestrating Maasvlakte">
+        <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="0.7" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+      </div>
+      <div class="feat-text fu d1">
+        <div class="sec-label">Uitgelicht Project</div>
+        <h2>Havenpier Bestrating<br><span>Maasvlakte</span></h2>
+        <p>Een van onze grootste en meest uitdagende projecten: de volledige herbestrating van een bedrijventerrein op de Maasvlakte voor het Havenbedrijf Rotterdam. Dit project omvatte de aanleg van een nieuwe rijvloer in gebakken klinkers, een volledig nieuw afwateringssysteem en aanpassingen aan de kolken en straatputten.</p>
+        <div class="feat-stats">
+          <div>
+            <div class="feat-stat-num">8.500 m²</div>
+            <div class="feat-stat-lbl">Bestrating aangelegd</div>
+          </div>
+          <div>
+            <div class="feat-stat-num">14 wkn</div>
+            <div class="feat-stat-lbl">Uitvoeringstijd</div>
+          </div>
+          <div>
+            <div class="feat-stat-num">12</div>
+            <div class="feat-stat-lbl">Vakmensen ingezet</div>
+          </div>
+        </div>
+        <a href="/contact/" class="btn btn-green">Offerte Aanvragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" aria-label="Offerte aanvragen">
+  <div class="container">
+    <div class="cta-inner fu">
+      <h2 class="cta-title">OOK EEN PROJECT<br>LATEN UITVOEREN?</h2>
+      <a href="/contact/" class="btn btn-outline">Neem Contact Op</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">W. le Comte <span>|</span></div>
+        <p class="footer-tagline">Civiel technisch aannemersbedrijf opgericht in 1964. Gespecialiseerd in bestrating, rioolwerken en grondverzet in de regio Rotterdam.</p>
+        <div class="footer-email-row">
+          <input type="email" class="footer-email-input" placeholder="Uw e-mailadres............" aria-label="E-mail voor nieuwsbrief" />
+          <button type="button" class="footer-email-btn" aria-label="Inschrijven"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg></button>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Ondersteuning</h3>
+        <ul class="footer-links">
+          <li><a href="/diensten/">Diensten</a></li>
+          <li><a href="/contact/">Offerte Aanvragen</a></li>
+          <li><a href="/privacybeleid/">Privacybeleid</a></li>
+          <li><a href="/algemene-voorwaarden/">Algemene Voorwaarden</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Links</h3>
+        <ul class="footer-links">
+          <li><a href="/over-ons/">Over Ons</a></li>
+          <li><a href="/projecten/">Projecten</a></li>
+          <li><a href="/over-ons/">Referenties</a></li>
+          <li><a href="/vacatures/">Vacatures</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Diensten</h3>
+        <ul class="footer-links">
+          <li><a href="/diensten/">Bestrating</a></li>
+          <li><a href="/diensten/">Rioolwerken</a></li>
+          <li><a href="/diensten/">Grondwerk</a></li>
+          <li><a href="/diensten/">Straatwerk</a></li>
+          <li><a href="/diensten/">Tuinwerk</a></li>
+          <li><a href="/diensten/">Civiel Technisch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 W. le Comte Aannemingsbedrijf b.v. &nbsp;·&nbsp; Industrieweg 2e, 2995 BE Heerjansdam</p>
+      <nav class="footer-bottom-links"><a href="/privacybeleid/">Privacy</a><a href="/algemene-voorwaarden/">Voorwaarden</a><a href="/sitemap.xml">Sitemap</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+<script>
+  /* ── Filter buttons (visual only) ─── */
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

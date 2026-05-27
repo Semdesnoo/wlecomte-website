@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — W. le Comte Aannemingsbedrijf</title>
+  <meta name="description" content="Neem contact op met W. le Comte Aannemingsbedrijf. Industrieweg 2e, Heerjansdam. Tel: 010-4830101. E-mail: info@wlecomte.nl." />
+  <link rel="canonical" href="https://www.wlecomte.nl/contact/" />
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.wlecomte.nl/contact/" />
+  <meta property="og:title" content="Contact — W. le Comte Aannemingsbedrijf" />
+  <meta property="og:description" content="Neem contact op of vraag een vrijblijvende offerte aan. Industrieweg 2e, Heerjansdam. Tel: 010-483 01 01. Ma–Vr 07:00–17:00." />
+  <meta property="og:image" content="https://www.wlecomte.nl/images/Hero%20sectie.jpg" />
+  <meta property="og:locale" content="nl_NL" />
+  <meta property="og:site_name" content="W. le Comte Aannemingsbedrijf" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — W. le Comte Aannemingsbedrijf" />
+  <meta name="twitter:description" content="Neem contact op of vraag een vrijblijvende offerte aan. Tel: 010-483 01 01. Ma–Vr 07:00–17:00." />
+  <meta name="twitter:image" content="https://www.wlecomte.nl/images/Hero%20sectie.jpg" />
+  <!-- Structured Data / JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "@id": "https://www.wlecomte.nl/contact/#webpage",
+        "url": "https://www.wlecomte.nl/contact/",
+        "name": "Contact — W. le Comte Aannemingsbedrijf",
+        "description": "Neem contact op met W. le Comte Aannemingsbedrijf voor een vrijblijvende offerte of adviesgesprek.",
+        "isPartOf": {"@id": "https://www.wlecomte.nl/#website"},
+        "about": {"@id": "https://www.wlecomte.nl/#business"},
+        "inLanguage": "nl-NL",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.wlecomte.nl/"},
+            {"@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.wlecomte.nl/contact/"}
+          ]
+        }
+      },
+      {
+        "@type": ["GeneralContractor", "LocalBusiness"],
+        "@id": "https://www.wlecomte.nl/#business",
+        "name": "W. le Comte Aannemingsbedrijf b.v.",
+        "url": "https://www.wlecomte.nl",
+        "telephone": "+31104830101",
+        "email": "info@wlecomte.nl",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Industrieweg 2e",
+          "addressLocality": "Heerjansdam",
+          "postalCode": "2995 BE",
+          "addressCountry": "NL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 51.8125,
+          "longitude": 4.5483
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:00",
+            "closes": "17:00"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <!-- Google Fonts — asynchroon geladen (niet render-blokkerend) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" /></noscript>
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    /* ── CONTACT LAYOUT ─────────────────────── */
+    #contact-main { padding: 80px 0 100px; background: var(--beige); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 72px;
+      align-items: start;
+    }
+
+    /* Form side */
+    .contact-form-wrap h2 {
+      font-size: clamp(1.6rem, 3vw, 2.4rem);
+      font-weight: 800; letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+    .contact-form-wrap h2 span { color: var(--green); }
+    .contact-form-wrap > p {
+      font-size: 0.9rem; color: var(--text-muted);
+      line-height: 1.75; margin-bottom: 36px;
+    }
+
+    .contact-form { display: flex; flex-direction: column; gap: 16px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-group { display: flex; flex-direction: column; gap: 7px; }
+    .form-label {
+      font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .form-input,
+    .form-select,
+    .form-textarea {
+      background: var(--white);
+      border: 1.5px solid var(--beige-3);
+      border-radius: var(--radius-sm);
+      padding: 13px 16px;
+      font-family: inherit; font-size: 0.9rem;
+      color: var(--text); outline: none;
+      transition: border-color var(--tr), box-shadow var(--tr);
+      width: 100%; box-sizing: border-box;
+    }
+    .form-input::placeholder,
+    .form-textarea::placeholder { color: var(--text-muted); }
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(59,74,44,0.08);
+    }
+    .form-select { appearance: none; cursor: pointer; }
+    .form-textarea { resize: vertical; min-height: 130px; line-height: 1.6; }
+    .form-check { display: flex; align-items: flex-start; gap: 10px; }
+    .form-check input[type="checkbox"] {
+      width: 16px; height: 16px; margin-top: 2px; cursor: pointer;
+      accent-color: var(--green); flex-shrink: 0;
+    }
+    .form-check-label { font-size: 0.82rem; color: var(--text-muted); line-height: 1.5; }
+    .form-check-label a { color: var(--green); text-decoration: underline; }
+    .form-submit {
+      background: var(--green); color: var(--white);
+      font-size: 0.82rem; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 15px 32px; border: none;
+      border-radius: var(--radius-sm);
+      cursor: pointer; align-self: flex-start;
+      transition: background var(--tr), transform var(--tr);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .form-submit:hover { background: #2E3A20; transform: translateY(-2px); }
+    .form-submit:active { transform: translateY(0); }
+    .form-success {
+      display: none; background: rgba(59,74,44,0.07);
+      border: 1.5px solid rgba(59,74,44,0.2);
+      border-radius: var(--radius-sm); padding: 18px 20px;
+      font-size: 0.88rem; color: var(--green);
+      font-weight: 500; margin-top: 8px;
+    }
+
+    /* Info side */
+    .contact-info { display: flex; flex-direction: column; gap: 24px; }
+    .info-card {
+      background: var(--white); border-radius: var(--radius-card);
+      border: 1px solid var(--beige-3); padding: 28px 28px 30px;
+      transition: box-shadow var(--tr);
+    }
+    .info-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.06); }
+    .info-card-head { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+    .info-icon {
+      width: 42px; height: 42px; border-radius: 50%;
+      border: 1.5px solid var(--green); color: var(--green);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .info-card-title { font-size: 0.88rem; font-weight: 700; color: var(--text); }
+    .info-card-val { font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+    .info-card-sub { font-size: 0.8rem; color: var(--text-muted); line-height: 1.55; }
+    .info-card a { color: var(--green); text-decoration: none; }
+    .info-card a:hover { text-decoration: underline; }
+
+    /* Map placeholder */
+    .map-card {
+      background: var(--white); border-radius: var(--radius-card);
+      border: 1px solid var(--beige-3); overflow: hidden;
+    }
+    .map-iframe { display: block; width: 100%; height: 220px; border: 0; }
+    .map-footer { padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; }
+    .map-address { font-size: 0.82rem; color: var(--text); font-weight: 600; }
+    .map-sub { font-size: 0.72rem; color: var(--text-muted); margin-top: 2px; }
+    .map-dir-btn {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--green);
+      display: flex; align-items: center; gap: 5px;
+      text-decoration: none; transition: gap var(--tr);
+    }
+    .map-dir-btn:hover { gap: 8px; }
+
+    /* Hours card */
+    .hours-grid { display: grid; grid-template-columns: 1fr auto; gap: 6px 20px; font-size: 0.82rem; }
+    .hours-day { color: var(--text-muted); }
+    .hours-time { color: var(--text); font-weight: 600; text-align: right; }
+    .hours-closed { color: var(--text-muted); font-weight: 400; }
+    .hours-divider { grid-column: 1/-1; height: 1px; background: var(--beige-3); margin: 6px 0; }
+
+    /* ── FAQ ────────────────────────────────── */
+    #faq { padding: 100px 0; background: var(--beige-2); }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 64px; align-items: start; }
+    .faq-head h2 { font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .faq-head h2 span { color: var(--green); }
+    .faq-head p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.75; margin-bottom: 28px; }
+    .faq-list { display: flex; flex-direction: column; gap: 0; }
+    .faq-item {
+      border-bottom: 1px solid var(--beige-3);
+      overflow: hidden;
+    }
+    .faq-q {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 0; cursor: pointer;
+      font-size: 0.9rem; font-weight: 700; color: var(--text);
+      user-select: none; gap: 16px;
+      background: none; border: none; width: 100%; text-align: left;
+    }
+    .faq-q:hover { color: var(--green); }
+    .faq-q svg { flex-shrink: 0; transition: transform var(--tr); color: var(--text-muted); }
+    .faq-item.open .faq-q svg { transform: rotate(45deg); color: var(--green); }
+    .faq-a {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+    .faq-item.open .faq-a { max-height: 200px; }
+    .faq-a-inner { padding: 0 0 16px; font-size: 0.85rem; color: var(--text-muted); line-height: 1.75; }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 56px; }
+      .faq-grid { grid-template-columns: 1fr; gap: 48px; }
+    }
+    @media (max-width: 640px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="mob-menu" id="mobMenu" role="dialog" aria-modal="true" aria-label="Navigatiemenu">
+  <a href="/" onclick="closeMob()">Home</a>
+  <a href="/over-ons/" onclick="closeMob()">Over Ons</a>
+  <a href="/diensten/" onclick="closeMob()">Diensten</a>
+  <a href="/projecten/" onclick="closeMob()">Projecten</a>
+  <a href="/contact/" onclick="closeMob()">Contact</a>
+  <a href="/contact/" class="btn-green btn" onclick="closeMob()">Offerte Aanvragen</a>
+</nav>
+
+<header id="nav" role="banner">
+  <div class="nav-inner">
+    <a href="/" class="nav-brand">W. le Comte B.V.</a>
+    <ul class="nav-links" role="list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/over-ons/">Over Ons</a></li>
+      <li><a href="/diensten/">Diensten</a></li>
+      <li><a href="/projecten/">Projecten</a></li>
+      <li><a href="/contact/" class="active">Contact</a></li>
+    </ul>
+    <button type="button" class="burger" id="burger" aria-label="Menu openen" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- PAGE BANNER -->
+<section class="page-banner" aria-label="Contact">
+  <div class="container">
+    <nav class="banner-breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">›</span>
+      <span>Contact</span>
+    </nav>
+    <h1 class="banner-title">Neem <em>Contact</em> Op</h1>
+    <p class="banner-sub">Heeft u een project of een vraag? Wij staan klaar voor een vrijblijvend gesprek en een heldere offerte.</p>
+  </div>
+</section>
+
+<!-- CONTACT MAIN -->
+<section id="contact-main" aria-label="Contactformulier en gegevens">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- FORM -->
+      <div class="contact-form-wrap fu">
+        <div class="sec-label">Stuur een bericht</div>
+        <h2>Vertel ons over<br>uw <span>project</span></h2>
+        <p>Vul het formulier in en wij nemen binnen 1 werkdag contact met u op voor een vrijblijvend adviesgesprek of offerte.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="voornaam" class="form-label">Voornaam *</label>
+              <input type="text" id="voornaam" name="voornaam" class="form-input" placeholder="Jan" required autocomplete="given-name" />
+            </div>
+            <div class="form-group">
+              <label for="achternaam" class="form-label">Achternaam *</label>
+              <input type="text" id="achternaam" name="achternaam" class="form-input" placeholder="de Vries" required autocomplete="family-name" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email" class="form-label">E-mailadres *</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="jan@bedrijf.nl" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="telefoon" class="form-label">Telefoonnummer</label>
+              <input type="tel" id="telefoon" name="telefoon" class="form-input" placeholder="010-123 4567" autocomplete="tel" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dienst" class="form-label">Gewenste dienst</label>
+            <select id="dienst" name="dienst" class="form-select">
+              <option value="" disabled selected>Selecteer een dienst...</option>
+              <option value="bestrating">Bestrating</option>
+              <option value="rioolwerken">Rioolwerken</option>
+              <option value="grondwerk">Grondwerk</option>
+              <option value="straatwerk">Straatwerk</option>
+              <option value="tuinonderhoud">Tuinonderhoud &amp; Aanleg</option>
+              <option value="civiel">Civiel Technisch Werk</option>
+              <option value="anders">Anders / Weet ik nog niet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="bericht" class="form-label">Uw bericht *</label>
+            <textarea id="bericht" name="bericht" class="form-textarea" placeholder="Beschrijf kort uw project of vraag. Geef indien mogelijk de locatie, omvang en gewenste planning aan." required></textarea>
+          </div>
+          <div class="form-check">
+            <input type="checkbox" id="privacy" name="privacy" required />
+            <label for="privacy" class="form-check-label">Ik ga akkoord met het <a href="/privacybeleid/">privacybeleid</a> van W. le Comte Aannemingsbedrijf b.v.</label>
+          </div>
+          <button type="submit" class="form-submit">
+            Verstuur bericht
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess" role="status">
+            Uw bericht is verstuurd! Wij nemen binnen 1 werkdag contact met u op.
+          </div>
+        </form>
+      </div>
+
+      <!-- INFO -->
+      <div class="contact-info fu d1">
+
+        <!-- Phone -->
+        <div class="info-card">
+          <div class="info-card-head">
+            <div class="info-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.18 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <span class="info-card-title">Telefoon</span>
+          </div>
+          <div class="info-card-val"><a href="tel:+31104830101">010 - 483 01 01</a></div>
+          <div class="info-card-sub">Ma–Vr: 07:00–17:00<br>Spoedlijn ook buiten kantooruren</div>
+        </div>
+
+        <!-- Email -->
+        <div class="info-card">
+          <div class="info-card-head">
+            <div class="info-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <span class="info-card-title">E-mail</span>
+          </div>
+          <div class="info-card-val"><a href="mailto:info@wlecomte.nl">info@wlecomte.nl</a></div>
+          <div class="info-card-sub">Wij reageren binnen 1 werkdag</div>
+        </div>
+
+        <!-- Address + Map -->
+        <div class="map-card info-card" style="padding:0; border:1px solid var(--beige-3);">
+          <iframe
+            class="map-iframe"
+            src="https://maps.google.com/maps?q=Industrieweg+2e,+2995+BE+Heerjansdam&z=15&output=embed"
+            title="Locatie W. le Comte — Industrieweg 2e, Heerjansdam"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+          <div class="map-footer">
+            <div>
+              <div class="map-address">Industrieweg 2e</div>
+              <div class="map-sub">2995 BE Heerjansdam</div>
+            </div>
+            <a href="https://maps.google.com/?q=Industrieweg+2e+Heerjansdam" target="_blank" rel="noopener noreferrer" class="map-dir-btn">
+              Route
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 17L17 7M7 7h10v10"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hours -->
+        <div class="info-card">
+          <div class="info-card-head">
+            <div class="info-icon" aria-hidden="true">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <span class="info-card-title">Openingstijden</span>
+          </div>
+          <div class="hours-grid">
+            <span class="hours-day">Maandag</span><span class="hours-time">07:00 – 17:00</span>
+            <span class="hours-day">Dinsdag</span><span class="hours-time">07:00 – 17:00</span>
+            <span class="hours-day">Woensdag</span><span class="hours-time">07:00 – 17:00</span>
+            <span class="hours-day">Donderdag</span><span class="hours-time">07:00 – 17:00</span>
+            <span class="hours-day">Vrijdag</span><span class="hours-time">07:00 – 17:00</span>
+            <div class="hours-divider"></div>
+            <span class="hours-day">Zaterdag</span><span class="hours-time hours-closed">Gesloten</span>
+            <span class="hours-day">Zondag</span><span class="hours-time hours-closed">Gesloten</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" aria-label="Veelgestelde vragen">
+  <div class="container">
+    <div class="faq-grid">
+      <div class="faq-head fu">
+        <div class="sec-label">FAQ</div>
+        <h2>Veelgestelde<br><span>vragen</span></h2>
+        <p>Heeft u een andere vraag? Neem gerust contact met ons op — wij helpen u graag verder.</p>
+        <a href="#contact-main" class="btn btn-green">Stel uw vraag</a>
+      </div>
+      <div class="faq-list fu d1" role="list">
+
+        <div class="faq-item" role="listitem">
+          <button type="button" class="faq-q" aria-expanded="false">
+            Hoe snel kan W. le Comte starten met mijn project?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Dit hangt af van onze agenda en de omvang van uw project. Voor kleinere opdrachten zijn wij vaak binnen 1 tot 2 weken inzetbaar. Voor grotere projecten plannen wij samen een realistisch startmoment in tijdens het adviesgesprek.</div></div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button type="button" class="faq-q" aria-expanded="false">
+            Is de offerte vrijblijvend?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Ja, alle offertes die wij uitbrengen zijn volledig vrijblijvend. U bent op geen enkele manier gebonden na ontvangst van onze offerte. Wij bespreken de offerte graag persoonlijk om eventuele vragen te beantwoorden.</div></div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button type="button" class="faq-q" aria-expanded="false">
+            Werken jullie ook voor particulieren?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Absoluut. Naast grote gemeentelijke en industriële projecten voeren wij ook met plezier kleinere particuliere opdrachten uit, zoals oprit aanleg, tuinophoging en bestrating van terras of pad. Elke opdrachtgever krijgt dezelfde aandacht en kwaliteit.</div></div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button type="button" class="faq-q" aria-expanded="false">
+            Wat is uw werkgebied?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Ons primaire werkgebied is de regio Rotterdam en de Hoeksche Waard, inclusief steden als Rotterdam, Barendrecht, Ridderkerk, Dordrecht en Spijkenisse. Voor grote projecten zijn wij ook buiten deze regio inzetbaar.</div></div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button type="button" class="faq-q" aria-expanded="false">
+            Is W. le Comte VCA-gecertificeerd?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Ja. W. le Comte Aannemingsbedrijf is VCA-gecertificeerd sinds januari 2000. Veiligheid, gezondheid en milieu staan centraal in onze werkwijze. Alle medewerkers werken conform de VCA-normen.</div></div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button type="button" class="faq-q" aria-expanded="false">
+            Beschikken jullie over eigen materieel?
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a"><div class="faq-a-inner">Ja, wij beschikken over een volledig eigen wagenpark en machinepark. Hierdoor zijn wij niet afhankelijk van externe verhuurders en kunnen wij snel inzetbaar zijn — ook voor spoedklussen.</div></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" aria-label="Offerte aanvragen">
+  <div class="container">
+    <div class="cta-inner fu">
+      <h2 class="cta-title">KLAAR VOOR UW<br>VOLGENDE PROJECT?</h2>
+      <a href="#contact-main" class="btn btn-outline">Vrijblijvend Offerte</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">W. le Comte <span>|</span></div>
+        <p class="footer-tagline">Civiel technisch aannemersbedrijf opgericht in 1964. Gespecialiseerd in bestrating, rioolwerken en grondverzet in de regio Rotterdam.</p>
+        <div class="footer-email-row">
+          <input type="email" class="footer-email-input" placeholder="Uw e-mailadres............" aria-label="E-mail voor nieuwsbrief" />
+          <button type="button" class="footer-email-btn" aria-label="Inschrijven"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg></button>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Ondersteuning</h3>
+        <ul class="footer-links">
+          <li><a href="/diensten/">Diensten</a></li>
+          <li><a href="/contact/">Offerte Aanvragen</a></li>
+          <li><a href="/privacybeleid/">Privacybeleid</a></li>
+          <li><a href="/algemene-voorwaarden/">Algemene Voorwaarden</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Links</h3>
+        <ul class="footer-links">
+          <li><a href="/over-ons/">Over Ons</a></li>
+          <li><a href="/projecten/">Projecten</a></li>
+          <li><a href="/over-ons/">Referenties</a></li>
+          <li><a href="/vacatures/">Vacatures</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-col-title">Diensten</h3>
+        <ul class="footer-links">
+          <li><a href="/diensten/">Bestrating</a></li>
+          <li><a href="/diensten/">Rioolwerken</a></li>
+          <li><a href="/diensten/">Grondwerk</a></li>
+          <li><a href="/diensten/">Straatwerk</a></li>
+          <li><a href="/diensten/">Tuinwerk</a></li>
+          <li><a href="/diensten/">Civiel Technisch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 W. le Comte Aannemingsbedrijf b.v. &nbsp;·&nbsp; Industrieweg 2e, 2995 BE Heerjansdam</p>
+      <nav class="footer-bottom-links"><a href="/privacybeleid/">Privacy</a><a href="/algemene-voorwaarden/">Voorwaarden</a><a href="/sitemap.xml">Sitemap</a></nav>
+    </div>
+  </div>
+</footer>
+
+<script src="/main.js" defer></script>
+<script>
+  /* ── Contact form ─── */
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const required = this.querySelectorAll('[required]');
+    let valid = true;
+    required.forEach(field => {
+      if (field.type === 'checkbox' && !field.checked) valid = false;
+      if (field.type !== 'checkbox' && !field.value.trim()) valid = false;
+    });
+    if (!valid) return;
+    const btn = this.querySelector('.form-submit');
+    btn.disabled = true;
+    btn.innerHTML = 'Verstuurd <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>';
+    btn.style.background = 'var(--green-mid)';
+    document.getElementById('formSuccess').style.display = 'block';
+  });
+
+  /* ── FAQ accordion ─── */
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', function () {
+      const item = this.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+</body>
+</html>
